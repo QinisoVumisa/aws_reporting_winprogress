@@ -1,0 +1,440 @@
+Scan performed using the following variables:
+Customer Name: synthesis-test
+Customer Region: eu-west-1
+Today's Date: 2026-02-25
+AWS Access Key ID: ASIAU6OLMAYRO57THGIV
+Boto3/CLI API Retry Mode: standard
+Maximum number of retries: 10
+Getting account id:  340265797154 ✅ 
+
+
+
+
+
+==============================================================================
+INFRASTRUCTURE COMPLIANCE SECTION
+-
+Compliance remediation prevents attackers from accessing the environment, and limits their ability to cause damage
+==============================================================================
+
+AWS Controls - Reporting Status        :      341     CIS Controls - Reporting Status        :       26     PCI Controls - Reporting Status        :       43
+AWS Controls - Failed                  :       63     CIS Controls - Failed                  :       16     PCI Controls - Failed                  :       14
+AWS Controls - Pass                    : 278          CIS Controls - Pass                    : 10           PCI Controls - Pass                    : 29
+AWS Foundations Score                  : 82%          CIS Foundations Score                  : 38%          PCI Score                              : 67%
+
+CIS v1.4 Controls - Reporting Status   : 0            CIS v3.0  Controls - Reporting Status  : 0            PCI v4.0.1 Controls - Reporting Status : 0
+CIS v1.4 Controls - Failed             : 0            CIS v3.0  Controls - Failed            : 0            PCI v4.0.1 Controls - Failed           : 0
+CIS v1.4 Controls - Pass               : 0            CIS v3.0  Controls - Passed            : 0            PCI v4.0.1 Controls - Pass             : 0
+CIS v1.4 Foundations Score             : N/A%         CIS v3.0 Foundations Score             : N/A%         PCI v4.0.1 Score                       : N/A%
+
+
+Historical scores per framework as recorded in monthly report. (NULL = Score not yet saved in DB)
+===========================================================================
+Month              Sep  Oct     Nov     Dec     Jan     Feb     
+
+AWS Scores:     N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS Scores:     N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS v1.4 Scores:        N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS v3.0 Scores:        N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+PCI Scores:     N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+PCI v4 Scores:  N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+  
+
+================================================================================
+COMPLIANCE FRAMEWORKS STATUS CHECK
+================================================================================
+✅ CIS AWS Foundations Benchmark v1.4.0    : ENABLED
+
+
+Historical scores per framework as recorded in monthly report. (NULL = Score not yet saved in DB)
+===========================================================================
+Month                 Mar     Apr     May     Jun     Jul     Aug     
+
+AWS Scores:           N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS Scores:           N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS v1.4 Scores:     N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS v3.0 Scores:     N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+PCI Scores:           N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+PCI v4 Scores:       N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+  
+Confirming security monitoring is enabled and working in all accounts
+==========================================================================================
+
+Number of AWS accounts reporting security events:       1
+Number of AWS regions reporting security events:        2
+===
+eu-west-1
+
+The following AWS compliance standards have been enabled in the environment:
+===
+standards/aws-foundational-security-best-practices/v/1.0.0
+standards/cis-aws-foundations-benchmark/v/3.0.0
+standards/pci-dss/v/4.0.1
+
+
+CloudTrail.1 (AWS Audit Trail Logging) errors detected in the following accounts/regions:
+Config.1 (AWS Compliance Tracking) errors detected in the following accounts/regions:
+GuardDuty.1 (AWS Threat Detection) errors detected in the following accounts/regions:
+"eu-central-1 AWS::::Account:340265797154"
+
+================================================================================
+NUMBER OF FAILING CONTROLS
+================================================================================
+
+                 AWS     CIS     PCI 
+
+CRITICAL:         0       0       0
+HIGH:             0       0       0
+MEDIUM:           0       0       0
+LOW:              0       0       0
+
+
+================================================================================
+NUMBER OF FAILING CONTROLS (BY SPECIFIC FRAMEWORK VERSIONS)
+================================================================================
+
+CIS AWS Foundations Benchmark v1.4.0: ❌ NOT ENABLED
+
+CIS AWS Foundations v3.0.0: ❌ NOT ENABLED
+
+PCI DSS v4.0.1: ❌ NOT ENABLED
+
+AWS Foundational Security Best Practices v1.0.0:
+CRITICAL: 0, HIGH: 0, MEDIUM: 0, LOW: 0
+
+================================================================================
+LEGACY FRAMEWORK MATRIX (for backward compatibility)
+================================================================================
+
+================================================================================
+LIST OF ISSUES RESOLVED IN THE LAST 30 DAYS - SCORE BOOSTERS.
+================================================================================
+
+Severity       AWS Control
+--------       -----------
+INFORMATIONAL  APIGateway.10 API Gateway V2 integrations should use HTTPS for private connections
+INFORMATIONAL  AutoScaling.2 Amazon EC2 Auto Scaling group should cover multiple Availability Zones
+INFORMATIONAL  AutoScaling.9 EC2 Auto Scaling groups should use EC2 launch templates
+INFORMATIONAL  ECS.19 ECS capacity providers should have managed termination protection enabled
+INFORMATIONAL  ECS.20 ECS task definitions should configure non-root users in Linux container definitions
+INFORMATIONAL  ECS.21 ECS task definitions should configure non-administrator users in Windows container definitions
+INFORMATIONAL  ELB.21 Application and Network Load Balancer target groups should use encrypted health check protocols
+INFORMATIONAL  ELB.22 ELB target groups should use encrypted transport protocols
+INFORMATIONAL  RDS.50 RDS DB clusters should have enough backup retention period set
+INFORMATIONAL  SSM.2 EC2 instances managed by Systems Manager should have a patch compliance status of COMPLIANT after a patch installation
+INFORMATIONAL  SSM.3 EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT
+INFORMATIONAL  SageMaker.10 SageMaker model explainability job definitions should have inter-container traffic encryption enabled
+INFORMATIONAL  SageMaker.11 SageMaker data quality job definitions should have network isolation enabled
+
+Severity  CIS Control
+--------  -----------
+
+Severity       PCI Control
+--------       -----------
+INFORMATIONAL  PCI.EC2.4 Unused EC2 EIPs should be removed
+INFORMATIONAL  PCI.SSM.1 EC2 instances managed by Systems Manager should have a patch compliance status of COMPLIANT after a patch installation
+INFORMATIONAL  PCI.SSM.2 EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT
+INFORMATIONAL  SSM.2 EC2 instances managed by Systems Manager should have a patch compliance status of COMPLIANT after a patch installation
+INFORMATIONAL  SSM.3 EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT
+
+
+================================================================================
+LIST OF CONTROLS FAILING IN THE LAST 30 DAYS - CRITICAL AND HIGH ONLY.
+================================================================================
+
+Severity  AWS Control                                                     Resource ID
+--------  -----------                                                     -----------
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/177ebda2-59ba-4ae3-8259-8aa8ae3066c9
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/2b5ff664-6776-4c5b-a438-993bebd6f7b1
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/2cb2bcbd-3d9a-4963-9482-fb29bc0177ab
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/4f07b969-5bce-45fa-95ec-a9b34ff45e28
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/566554a9-8ef6-415c-bc26-60c16173a4f0
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/567ad51e-f368-4c91-ae4b-99f5de3eb9d5
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/6177fb28-b6d3-48f4-b433-610544778007
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/65e5756f-1ca7-4be2-8273-a888884bf792
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/9a8afa3a-f7d7-4535-91ce-b33f9ec5068c
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/9e80fe4f-f035-42c8-83d7-50702e99131e
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/9f8e5585-c86c-4c63-a7ae-5f90d8420cb1
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/b136317f-b61c-46da-aa02-c5f2fa48e455
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally        arn:aws:kms:eu-west-1:340265797154:key/bb461e3c-5466-4801-a6d4-0ea32c74a3ea
+
+Severity  CIS Control                                                          Resource ID
+--------  -----------                                                          -----------
+CRITICAL  1.4 MFA should be enabled for the root user                          AWS::::Account:340265797154
+CRITICAL  1.5 Hardware MFA should be enabled for the root user                 AWS::::Account:340265797154
+HIGH      1.19 IAM Access Analyzer external access analyzer should be enabled  AWS::::Account:340265797154
+
+Severity  PCI Control  Resource ID
+--------  -----------  -----------
+
+
+================================================================================
+LIST OF FAILING CONTROLS - CRITICAL AND HIGH ONLY.
+================================================================================
+
+Severity  AWS Control
+CRITICAL  SSM.7 SSM documents should have the block public sharing setting enabled
+CRITICAL  IAM.6 Hardware MFA should be enabled for the root user
+CRITICAL  KMS.3 AWS KMS keys should not be deleted unintentionally
+CRITICAL  SSM.7 SSM documents should have the block public sharing setting enabled
+HIGH  EC2.182 Amazon EBS Snapshots should not be publicly accessible
+HIGH  EC2.2 VPC default security groups should not allow inbound or outbound traffic
+HIGH  EC2.8 EC2 instances should use Instance Metadata Service Version 2 (IMDSv2)
+HIGH  EC2.9 EC2 instances should not have a public IPv4 address
+HIGH  ECS.5 ECS containers should be limited to read-only access to root filesystems
+HIGH  GuardDuty.1 GuardDuty should be enabled
+HIGH  Inspector.1 Amazon Inspector EC2 scanning should be enabled
+HIGH  Inspector.2 Amazon Inspector ECR scanning should be enabled
+HIGH  Inspector.3 Amazon Inspector Lambda code scanning should be enabled
+HIGH  Inspector.4 Amazon Inspector Lambda standard scanning should be enabled
+
+Severity  CIS Control
+CRITICAL  1.13 Ensure MFA is enabled for the root user
+CRITICAL  1.14 Ensure hardware MFA is enabled for the root user
+CRITICAL  1.13 Ensure MFA is enabled for the root user
+CRITICAL  1.14 Ensure hardware MFA is enabled for the root user
+CRITICAL  1.4 MFA should be enabled for the root user
+CRITICAL  1.5 Ensure MFA is enabled for the 'root' user account
+CRITICAL  1.5 Hardware MFA should be enabled for the root user
+CRITICAL  1.5 MFA should be enabled for the root user
+CRITICAL  1.6 Ensure hardware MFA is enabled for the 'root' user account
+CRITICAL  1.6 Hardware MFA should be enabled for the root user
+HIGH  1.19 IAM Access Analyzer external access analyzer should be enabled
+HIGH  1.20 IAM Access Analyzer external access analyzer should be enabled
+HIGH  4.3 Ensure the default security group of every VPC restricts all traffic
+HIGH  5.3 Ensure the default security group of every VPC restricts all traffic
+HIGH  5.4 VPC default security groups should not allow inbound or outbound traffic
+HIGH  5.5 VPC default security groups should not allow inbound or outbound traffic
+HIGH  5.6 EC2 instances should use Instance Metadata Service Version 2 (IMDSv2)
+HIGH  5.7 EC2 instances should use Instance Metadata Service Version 2 (IMDSv2)
+
+Severity  PCI Control
+CRITICAL  IAM.9 MFA should be enabled for the root user
+CRITICAL  PCI.IAM.5 MFA should be enabled for the root user
+CRITICAL  IAM.6 Hardware MFA should be enabled for the root user
+CRITICAL  PCI.IAM.4 Hardware MFA should be enabled for the root user
+HIGH  EC2.8 EC2 instances should use Instance Metadata Service Version 2 (IMDSv2)
+HIGH  Inspector.1 Amazon Inspector EC2 scanning should be enabled
+HIGH  Inspector.2 Amazon Inspector ECR scanning should be enabled
+HIGH  Inspector.3 Amazon Inspector Lambda code scanning should be enabled
+HIGH  Inspector.4 Amazon Inspector Lambda standard scanning should be enabled
+HIGH  PCI.EC2.2 VPC default security group should prohibit inbound and outbound traffic
+
+
+================================================================================
+RECOMMENDED HIGH PRIORITY REMEDIATION SECTION
+-
+The following failures are considered TOP PRIORITY for remedediation by the Synthesis Security Team
+================================================================================
+
+======
+EC2.19 - Security groups with sensitive ports open to public internet
+======
+
+======
+AWS: S3.8 - Block S3 Public Access needs to be enabled on each bucket
+======
+
+======
+AWS: S3.1 - Block S3 Public Access needs to be enabled in each account
+======
+340265797154  AWS::::Account:340265797154  -
+340265797154  AWS::::Account:340265797154  -
+340265797154  AWS::::Account:340265797154  -
+340265797154  AWS::::Account:340265797154  -
+340265797154  AWS::::Account:340265797154  -
+
+======
+EC2.7 - EBS default encryption setting should be enabled
+======
+340265797154  AWS::::Account:340265797154  eu-west-1     -
+340265797154  AWS::::Account:340265797154  eu-west-1     -
+340265797154  AWS::::Account:340265797154  us-east-2     -
+340265797154  AWS::::Account:340265797154  eu-central-1  -
+
+======
+IAM.5 - IAM users with console access that don't have MFA/2FA
+======
+340265797154  arn:aws:iam::340265797154:user/NessusAudit  -
+
+==============================================================================
+EC2 COMPLIANCE SECTION
+==============================================================================
+
+======
+EC2 instances failing SSM.1 - EC2 should be managed by AWS Systems Manager
+======
+arn:aws:ec2:eu-west-1:340265797154:instance/i-054bae94cb7f5cbec  -
+arn:aws:ec2:eu-west-1:340265797154:instance/i-054bae94cb7f5cbec  -
+arn:aws:ec2:eu-west-1:340265797154:instance/i-0d74a7a9ff6f5113a  -
+arn:aws:ec2:eu-west-1:340265797154:instance/i-0d74a7a9ff6f5113a  -
+
+======
+EC2 instances failing SSM.3 - EC2 with SSM association errors
+======
+arn:aws:ssm:eu-west-1:340265797154:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-012696f98404ff3cb  -
+arn:aws:ssm:eu-west-1:340265797154:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-012696f98404ff3cb  -
+arn:aws:ssm:eu-west-1:340265797154:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-012696f98404ff3cb  -
+arn:aws:ssm:eu-west-1:340265797154:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-019a08b591fcd6a29  -
+arn:aws:ssm:eu-west-1:340265797154:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-019a08b591fcd6a29  -
+arn:aws:ssm:eu-west-1:340265797154:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-019a08b591fcd6a29  -
+
+======
+EC2 instances failing SSM.2 - EC2 instances missing OS patching error. Missing or failed patches.
+======
+
+================================================================================
+COMPLIANCE FRAMEWORKS STATUS CHECK
+================================================================================
+✅ CIS AWS Foundations Benchmark v1.4.0    : ENABLED
+
+
+Historical scores per framework as recorded in monthly report. (NULL = Score not yet saved in DB)
+===========================================================================
+Month                 Mar     Apr     May     Jun     Jul     Aug     
+
+AWS Scores:           N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS Scores:           N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS v1.4 Scores:     N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+CIS v3.0 Scores:     N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+PCI Scores:           N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+PCI v4 Scores:       N/A%    N/A%    N/A%    N/A%    N/A%    N/A%    
+  
+
+================================================================================
+COMPLIANCE FAILURES - RESOURCE DETAIL SECTION - TOP FIVE
+-
+Please remediate the following, if the risk is accepted, then let us know so that we can suppress the check
+================================================================================
+=============
+AWS Framework
+=============
+
+
+ -------- -----------
+===
+
+
+ ControlID Severity Description
+===
+
+
+ CRITICAL IAM.6 Hardware MFA should be enabled for the root u           er
+===
+340265797154  AWS::::Account:340265797154  -
+
+
+ CRITICAL KMS.3 AWS KMS keys            hould not be deleted unintentionally
+===
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/177ebda2-59ba-4ae3-8259-8aa8ae3066c9  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/2b5ff664-6776-4c5b-a438-993bebd6f7b1  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/2cb2bcbd-3d9a-4963-9482-fb29bc0177ab  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/4f07b969-5bce-45fa-95ec-a9b34ff45e28  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/566554a9-8ef6-415c-bc26-60c16173a4f0  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/567ad51e-f368-4c91-ae4b-99f5de3eb9d5  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/6177fb28-b6d3-48f4-b433-610544778007  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/65e5756f-1ca7-4be2-8273-a888884bf792  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/9a8afa3a-f7d7-4535-91ce-b33f9ec5068c  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/9e80fe4f-f035-42c8-83d7-50702e99131e  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/9f8e5585-c86c-4c63-a7ae-5f90d8420cb1  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/b136317f-b61c-46da-aa02-c5f2fa48e455  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/bb461e3c-5466-4801-a6d4-0ea32c74a3ea  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/d0e092aa-174f-4687-92c6-c666ba4950b1  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/e24f0f69-c5f2-4535-b24f-f81a6772085c  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/e4332c9b-cbb3-46cb-bf84-1c0560d4a1bf  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/e83844a9-9214-483f-abee-a0066652f408  -
+340265797154  arn:aws:kms:eu-west-1:340265797154:key/ef3bb52e-af09-43e7-aa5e-4c28ef561708  -
+
+
+ CRITICAL SSM.7 SSM documents           hould have the block public sharing setting enabled
+===
+340265797154  AWS::::Account:340265797154  -
+
+=============
+CIS AWS Foundations Benchmark v3.0.0
+=============
+
+⚠️  CIS AWS Foundations Benchmark v3.0.0 is not enabled
+
+=============
+CIS AWS Foundations Benchmark v1.4.0
+=============
+
+⚠️  CIS AWS Foundations Benchmark v1.4.0 is not enabled
+
+=============
+Generic CIS Framework (Fallback)
+=============
+
+
+ -------- -----------
+===
+
+
+ CRITICAL 1.13 Ensure MFA i              enabled for the root user
+===
+340265797154  AWS::::Account:340265797154  -
+
+
+ CRITICAL 1.14 Ensure hardware MFA i             enabled for the root user
+===
+340265797154  AWS::::Account:340265797154  -
+
+
+ ControlID Severity Description
+===
+
+
+ -------- -----------
+===
+
+=============
+PCI DSS v4.0.1
+=============
+
+⚠️  PCI DSS v4.0.1 is not enabled
+
+=============
+Generic PCI Framework (Fallback)
+=============
+
+
+ -------- -----------
+===
+
+
+ ControlID Severity Description
+===
+
+
+ CRITICAL IAM.6 Hardware MFA should be enabled for the root u           er
+===
+340265797154  AWS::::Account:340265797154  -
+
+
+ CRITICAL IAM.9 MFA should be enabled for the root u            er
+===
+340265797154  AWS::::Account:340265797154  -
+
+
+ CRITICAL PCI.IAM.4 Hardware MFA should be enabled for the root u               er
+===
+340265797154  AWS::::Account:340265797154  -
+
+================================================================================
+APPENDIX: SUPPRESSED COMPLIANCE CHECKS
+-
+For visibility and regular review. These are not being monitored for compliance
+================================================================================
+
+===
+AWS Framework
+===
+
+===
+CIS Framework
+===
+
+===
+PCI Framework
+===

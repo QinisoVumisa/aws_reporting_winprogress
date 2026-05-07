@@ -1,0 +1,85 @@
+Scan performed using the following variables:
+Customer Name: mcs-dev-test-reprt
+Customer Region: eu-west-1
+Today's Date: 2025-08-11
+AWS Access Key ID: ASIAU6OLMAYROLJ4B533
+Boto3/CLI API Retry Mode: standard
+Maximum number of retries: 10
+Getting account id:  340265797154 ✅ 
+
+Existing Sample GuardDuty finding detected. Setting workflow as NEW to trigger a test incident to the ITSM process.
+==========================================================================================
+MONITORING SECTION
+-
+================================================================================
+COMPLIANCE FRAMEWORKS STATUS CHECK
+================================================================================
+✅ CIS AWS Foundations Benchmark v1.4.0    : ENABLED
+✅ CIS AWS Foundations Benchmark v3.0.0    : ENABLED
+✅ PCI DSS v4.0.1                          : ENABLED
+
+Confirming security monitoring is enabled and working in all accounts
+==========================================================================================
+
+Number of AWS accounts reporting security events:       1
+Number of AWS regions reporting security events:        2
+===
+eu-west-1
+
+CloudTrail.1 (AWS Audit Trail Logging) errors detected in the following accounts/regions:
+Config.1 (AWS Compliance Tracking) errors detected in the following accounts/regions:
+GuardDuty.1 (AWS Threat Detection) errors detected in the following accounts/regions:
+"eu-central-1 AWS::::Account:340265797154"
+
+
+================================================================================
+GUARDDUTY INCIDENTS SECTION
+-
+GuardDuty detects anomalous activity in the environment
+================================================================================
+
+Incident 3-month trend:          May     Jun     Jul 
+
+HIGH:                             0       0       0
+MEDIUM:                           0       0       1
+LOW:                              0       0       2
+TOTAL:                            0       0       3
+
+
+==========
+INCIDENT DETAIL for the current reporting month: 2025-07-01 to 2025-07-31
+==========
+
+HIGH
+====
+
+MEDIUM
+======
+[
+  "340265797154",
+  "GeneratedFindingPrincipalId",
+  "GeneratedFindingUserName",
+  "TTPs/Privilege Escalation/IAMUser-AnomalousBehavior",
+  "The user GeneratedFindingUserType : GeneratedFindingUserName is anomalously invoking APIs commonly used in PrivilegeEscalation tactics.",
+  "arn:aws:guardduty:eu-west-1:340265797154:detector/b6c39b58362a9478f546789aa3b6d2bf/finding/aa26bba941ea412e90497a38cf38b988"
+]
+
+LOW
+===
+[
+  "340265797154",
+  "AROAU6OLMAYRKCRB7X7JR:TERRAFORM_DATADOG_SIEM_55283b15-14d6-d41e-b53a-f5c096a8ef4e",
+  "mcs-datadog-siem-deployment-role",
+  "TTPs/Defense Evasion/Stealth:IAMUser-CloudTrailLoggingDisabled",
+  "An AWS CloudTrail trail arn:aws:cloudtrail:eu-west-1:340265797154:trail/dev-mcs-dev-datadog-trail was disabled.",
+  "arn:aws:guardduty:eu-west-1:340265797154:detector/b6c39b58362a9478f546789aa3b6d2bf/finding/18cc097fc88d8deb9ee078f22c7c6d2f"
+]
+[
+  "340265797154",
+  "AROAU6OLMAYRKCRB7X7JR:TERRAFORM_DATADOG_SIEM_08c5496f-5765-1c17-1bbf-a8ec088ab445",
+  "mcs-datadog-siem-deployment-role",
+  "Effects/Data Exposure/Policy:S3-BucketBlockPublicAccessDisabled",
+  "Amazon S3 Block Public Access was disabled for the S3 bucket dev-mcs-dev-datadog-siem.",
+  "arn:aws:guardduty:eu-west-1:340265797154:detector/b6c39b58362a9478f546789aa3b6d2bf/finding/54cc0e44693990591cf621d4c8bb10aa"
+]
+

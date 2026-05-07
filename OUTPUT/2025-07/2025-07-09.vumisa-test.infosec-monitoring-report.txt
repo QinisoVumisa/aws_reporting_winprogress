@@ -1,0 +1,59 @@
+Scan performed using the following variables:
+Customer Name: vumisa-test
+Customer Region: eu-west-1
+Today's Date: 2025-07-09
+AWS Access Key ID: ASIAU6OLMAYRGDOLHGOV
+Boto3/CLI API Retry Mode: standard
+Maximum number of retries: 10
+Getting account id:  340265797154 ✅ 
+
+Existing Sample GuardDuty finding detected. Setting workflow as NEW to trigger a test incident to the ITSM process.
+==========================================================================================
+MONITORING SECTION
+-
+Confirming security monitoring is enabled and working in all accounts
+==========================================================================================
+
+Number of AWS accounts reporting security events:       1
+Number of AWS regions reporting security events:        3
+===
+
+The following AWS compliance standards have been enabled in the environment:
+===
+
+
+CloudTrail.1 (AWS Audit Trail Logging) errors detected in the following accounts/regions:
+Config.1 (AWS Compliance Tracking) errors detected in the following accounts/regions:
+GuardDuty.1 (AWS Threat Detection) errors detected in the following accounts/regions:
+"eu-central-1 AWS::::Account:340265797154"
+
+
+================================================================================
+GUARDDUTY INCIDENTS SECTION
+-
+GuardDuty detects anomalous activity in the environment
+================================================================================
+
+Incident 3-month trend:          Apr     May     Jun 
+
+HIGH:                             148     0       0
+MEDIUM:                           150     0       0
+LOW:                              61      0       0
+TOTAL:                            361     0       0
+
+
+==========
+INCIDENT DETAIL for the current reporting month: 2025-06-01 to 2025-06-30
+==========
+
+HIGH
+====
+
+MEDIUM
+======
+
+LOW
+===
+
+
+Problem resolving sample guardduty finding. Sample finding not found in Security Hub, or has already been marked as RESOLVED.

@@ -1,0 +1,57 @@
+Scan performed using the following variables:
+Customer Name: synthesis-tes
+Customer Region: eu-west-1
+Today's Date: 2026-02-25
+AWS Access Key ID: ASIAU6OLMAYRO57THGIV
+Boto3/CLI API Retry Mode: standard
+Maximum number of retries: 10
+Getting account id:  340265797154 ✅ 
+
+Existing Sample GuardDuty finding detected. Setting workflow as NEW to trigger a test incident to the ITSM process.
+==========================================================================================
+MONITORING SECTION
+-
+Confirming security monitoring is enabled and working in all accounts
+==========================================================================================
+
+Number of AWS accounts reporting security events:       1
+Number of AWS regions reporting security events:               3
+===
+
+The following AWS compliance standards have been enabled in the environment:
+===
+
+
+CloudTrail.1 (AWS Audit Trail Logging) errors detected in the following accounts/regions:
+Config.1 (AWS Compliance Tracking) errors detected in the following accounts/regions:
+GuardDuty.1 (AWS Threat Detection) errors detected in the following accounts/regions:
+"eu-central-1 AWS::::Account:340265797154"
+
+
+================================================================================
+GUARDDUTY INCIDENTS SECTION
+-
+GuardDuty detects anomalous activity in the environment
+================================================================================
+
+Incident 3-month trend:                           
+
+HIGH:                                             
+MEDIUM:                                           
+LOW:                                              
+TOTAL:                                            
+
+
+==========
+INCIDENT DETAIL for the current reporting month:  to 
+==========
+
+HIGH
+====
+
+MEDIUM
+======
+
+LOW
+===
+
